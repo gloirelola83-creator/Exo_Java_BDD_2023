@@ -57,6 +57,14 @@
 
 <h2>Exercice 3 : Triangle rectangle inversé</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p>
+<p>
+    <% for (int j = 0; j < cpt; j++) { %>
+          <% for (int k = 1; k <=cpt-j ; k++) { %>
+           <%= "*" %>
+        <% } %>
+        </br>
+    <% } %>  
+    </p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>*****</br>****</br>***</br>**</br>*</p>
 
