@@ -71,11 +71,14 @@
 <h2>Exercice 4 : Triangle rectangle 2</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
  <% for (int j = 1; j <= cpt; j++) { %>
-          <% for (int k = 1; k <= cpt-j; k++) { %>
+          <% for (int k = 1; k <= (cpt-j)/2; k++) { %>
            <%= "&nbsp&nbsp" %>
         <% } %>
         <% for (int h = 1; h <= j; h++) { %>
            <%= "*" %>
+        <% } %>
+        <% for (int k = 1; k <= (cpt-j)/2; k++) { %>
+           <%= "&nbsp&nbsp" %>
         <% } %>
         </br>
     <% } %>  
