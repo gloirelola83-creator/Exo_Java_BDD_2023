@@ -45,7 +45,6 @@
 <h2>Exercice 2 : Triangle rectangle gauche</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p>
 <p>
-    int a = 1;
     <% for (int j = 1; j <= cpt; j++) { %>
           <% for (int k = 1; k <= j; k++) { %>
            <%= "*" %>
