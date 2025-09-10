@@ -47,13 +47,10 @@
 <p>
     int a = 1;
     <% for (int j = 1; j <= cpt; j++) { %>
-        
-        <% do  { %>
+          <% for (int k = 1; k <= j; k++) { %>
            <%= "*" %>
-            a++;
-        <% } while(a<=cpt) %>  
+        <% } %>
         </br>
-        
     <% } %>  
     </p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
