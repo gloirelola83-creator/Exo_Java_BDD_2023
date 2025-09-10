@@ -45,10 +45,16 @@
 <h2>Exercice 2 : Triangle rectangle gauche</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p>
 <p>
-        <% for (int k = 1; k <= cpt; k++) { %>
+    int a = 1;
+    <% for (int j = 1; j <= cpt; j++) { %>
+        
+        <% do  { %>
            <%= "*" %>
-            </br>
-        <% } %>        
+            a++;
+        <% } while(a<=cpt) %>  
+        </br>
+        
+    <% } %>  
     </p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>*</br>**</br>***</br>****</br>*****</p>
