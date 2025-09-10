@@ -70,6 +70,16 @@
 
 <h2>Exercice 4 : Triangle rectangle 2</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
+ <% for (int j = 1; j <= cpt; j++) { %>
+          <% for (int k = 1; k <= cpt-1; k++) { %>
+           <%= " " %>
+        <% } %>
+        <% for (int h = 1; h <= j; h++) { %>
+           <%= "*" %>
+        <% } %>
+        </br>
+    <% } %>  
+    </p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;***</br>&nbsp;&nbsp;****</br>*****</p>
 
