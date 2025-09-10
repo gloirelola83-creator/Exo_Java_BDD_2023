@@ -86,7 +86,7 @@
 <h2>Exercice 5 : Triangle isocele</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
 <% for (int j = 1; j <= cpt; j++) { %>
-          <% for (int k = 1; k <= (cpt-j)/2; k++) { %>
+          <% for (int k = 1; k <= (cpt-j); k++) { %>
            <%= "&nbsp&nbsp" %>
         <% } %>
         <% for (int h = 1; h <= (2*j-1); h++) { %>
