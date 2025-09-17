@@ -131,7 +131,7 @@
 
 <% for (int j = 1; j <= cpt; j++) { %>
         <% for (int k = 1; k <= cpt; k++) { %>
-            <%= "cpt x k = (cpt*k)" %>
+            cpt x k = (cpt*k)
         <% } %>
         </br>
      <% } %>   
