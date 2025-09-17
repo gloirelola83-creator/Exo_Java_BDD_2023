@@ -111,12 +111,13 @@
     <% } %>  
     </p>
  <% for (int j = 0; j < cpt; j++) { %>
+          <% for (int h = 1; h <= j; h++) { %>
+          <%= "&nbsp&nbsp" %>
+        <% } %>
           <% for (int k = 1; k <= (cpt-j); k++) { %>
             <%= "*" %>
         <% } %>
-        <% for (int h = 1; h <= j; h++) { %>
-          <%= "&nbsp&nbsp" %>
-        <% } %>
+        
         </br>
     <% } %>  
     </p>
