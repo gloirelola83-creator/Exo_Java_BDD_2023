@@ -34,9 +34,9 @@
 <p>Ecrire un programme qui demande à l'utilisateur de saisir 3 valeurs (des chiffres),</br>
 A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
 <form action="#" method="post">
-    <p>A : <input type="text" id="inputValeur" name="A">
-    <p>B : <input type="text" id="inputValeur" name="B">
-    <p>C : <input type="text" id="inputValeur" name="C"
+    <p>Saisir A : <input type="text" id="inputValeur" name="A">
+    <p>Saisir B : <input type="text" id="inputValeur" name="B">
+    <p>Saisir C : <input type="text" id="inputValeur" name="C"
     <p><input type="submit" value="Afficher">
 </form>
 <%-- Récupération des valeurs --%>
@@ -47,12 +47,12 @@ A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
     <%-- Vérification de la condition entre les deux valeurs --%>
     <% if (A != null && B != null && C != null) { %>
         <%-- Conversion des valeurs en entiers pour la comparaison --%>
-        <% int intA = Integer.parseInt(A); %>
-        <% int intB = Integer.parseInt(B); %>
-        <% int intC = Integer.parseInt(C); %>
+        <% int intValeurA = Integer.parseInt(A); %>
+        <% int intValeurB = Integer.parseInt(B); %>
+        <% int intValeurC = Integer.parseInt(C); %>
 
         <%-- Condition if pour comparer les valeurs --%>
-        <% if ((intC >= intB && intC <= intA) || (intC <= intB && intC >= intA) { %>
+        <% if ((intValeurC >= intValeurB && intValeurC <= intValeurA) || (intValeurC <= intValeurB && intValeurC >= intValeurA) { %>
             <p>Oui C est compris entre A et B.</p>
         <% } else { %>
             <p>Non C n'est pas compris entre A et B.</p>
