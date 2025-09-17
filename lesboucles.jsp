@@ -130,7 +130,7 @@
 <p>Ecrire le code afin de créer une table de multiplication</p>
 
 <% for (int j = 1; j <= cpt; j++) { %>
-           <%= cpt %> x <%= k %> = <%= cpt * k %><br/>
+           <%= cpt %> x <%= j %> = <%= cpt * j %><br/>
 <% } %>   
         
     </p>
