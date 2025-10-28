@@ -46,7 +46,19 @@ A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
     <% String val2 = request.getParameter("val2"); %>
     <% String val3 = request.getParameter("val3"); %>
 
+<%-- Vérification de la condition entre les 3 valeurs --%>
+    <% if (val1 != null && val2 != null && val3 != null ) { %>
+        <%-- Conversion des valeurs en entiers pour la comparaison --%>
+        <% int intVal1 = Integer.parseInt(val1); %>
+        <% int intVal2 = Integer.parseInt(val2); %>
+        <% int intVal3 = Integer.parseInt(val3); %>
 
+        <%-- Condition if pour comparer les valeurs --%>
+        <% if (intVal1 <=  intVal3 && intVal3 <= intVal2) { %>
+            <p>C est est compris entre A et B.</p>
+        <% } else { %>
+            <p>C n'est pas compris entre A et B .</p>
+        <% } %>
 
 Exemple :</br>
 A = 10</br>
