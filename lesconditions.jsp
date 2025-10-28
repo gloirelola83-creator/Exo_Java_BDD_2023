@@ -33,31 +33,6 @@
 <h2>Exercice 1 : Comparaison 1</h2>
 <p>Ecrire un programme qui demande à l'utilisateur de saisir 3 valeurs (des chiffres),</br>
 A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
-<form action="#" method="post">
-    <p>Saisir A : <input type="text" id="inputValeur" name="A">
-    <p>Saisir B : <input type="text" id="inputValeur" name="B">
-    <p>Saisir C : <input type="text" id="inputValeur" name="C"
-    <p><input type="submit" value="Afficher">
-</form>
-<%-- Récupération des valeurs --%>
-    <% String A = request.getParameter("A"); %>
-    <% String B = request.getParameter("B"); %>
-    <% String C = request.getParameter("C"); %>
-
-    <%-- Vérification de la condition entre les deux valeurs --%>
-    <% if (A != null && B != null && C != null) { %>
-        <%-- Conversion des valeurs en entiers pour la comparaison --%>
-        <% int intValeurA = Integer.parseInt(A); %>
-        <% int intValeurB = Integer.parseInt(B); %>
-        <% int intValeurC = Integer.parseInt(C); %>
-
-        <%-- Condition if pour comparer les valeurs --%>
-        <% if ((intValeurC >= intValeurB && intValeurC <= intValeurA) || (intValeurC <= intValeurB && intValeurC >= intValeurA)) { %>
-            <p>Oui C est compris entre A et B.</p>
-        <% } else { %>
-            <p>Non C n'est pas compris entre A et B.</p>
-        <% } %>
-
 Exemple :</br>
 A = 10</br>
 B = 20</br>
