@@ -42,6 +42,7 @@ A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
     <p>Saisir la valeur C : <input type="text" id="inputValeur" name="val3">
     <p><input type="submit" value="Afficher">
 </form>
+
 <%-- Récupération des valeurs --%>
     <% String val1 = request.getParameter("val1"); %>
     <% String val2 = request.getParameter("val2"); %>
@@ -53,7 +54,7 @@ A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
         <% int intVal1 = Integer.parseInt(val1); %>
         <% int intVal2 = Integer.parseInt(val2); %>
         <% int intVal3 = Integer.parseInt(val3); %>
-
+<% } %>
         <%-- Condition if pour comparer les valeurs --%>
         <% if (intVal1 <=  intVal3 && intVal3 <= intVal2) { %>
             <p>C est est compris entre A et B.</p>
