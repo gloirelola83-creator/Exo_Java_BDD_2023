@@ -36,30 +36,26 @@ A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
 <p>Solution ,</br>
 
 <form action="#" method="post">
-    <p>Saisir la valeur A : <input type="text" id="inputValeur" name="val1">
-    <p>Saisir la valeur B : <input type="text" id="inputValeur" name="val2">
-    <p>Saisir la valeur C : <input type="text" id="inputValeur" name="val3">
+  
+    <p>Saisir la valeur C : <input type="text" id="inputValeur" name="valeur3">
     <p><input type="submit" value="Afficher">
 </form>
 <%-- Récupération des valeurs --%>
-    <% String val1 = request.getParameter("val1"); %>
-    <% String val2 = request.getParameter("val2"); %>
-    <% String val3 = request.getParameter("val3"); %>
+    <% String val3 = request.getParameter("valeur3"); %>
 
 <%-- Vérification de la condition entre les 3 valeurs --%>
-    <% if (val1 != null && val2 != null && val3 != null ) { %>
+    <% if (valeur3 != null ) { %>
         <%-- Conversion des valeurs en entiers pour la comparaison --%>
-        <% int intVal1 = Integer.parseInt(val1); %>
-        <% int intVal2 = Integer.parseInt(val2); %>
         <% int intVal3 = Integer.parseInt(val3); %>
 
         <%-- Condition if pour comparer les valeurs --%>
-        <% if (intVal1 <=  intVal3 && intVal3 <= intVal2) { %>
+        <% if (intValeur1 <=  intValeur3 && intValeur3 <= intValeur2) { %>
             <p>C est est compris entre A et B.</p>
         <% } else { %>
             <p>C n'est pas compris entre A et B .</p>
         <% } %>
     <% } %>
+
 Exemple :</br>
 A = 10</br>
 B = 20</br>
