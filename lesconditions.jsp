@@ -37,28 +37,28 @@ A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
 <p>Solution ,</br>
 
 <form action="#" method="post">
-    <p>Saisir la valeur A : <input type="text" id="inputValeur" name="valeur1">
-    <p>Saisir la valeur B : <input type="text" id="inputValeur" name="valeur2">
-    <p>Saisir la valeur C : <input type="text" id="inputValeur" name="valeur3">
+    <p>Saisir la valeur A : <input type="text" id="inputValeur" name="val1">
+    <p>Saisir la valeur B : <input type="text" id="inputValeur" name="val2">
+    <p>Saisir la valeur C : <input type="text" id="inputValeur" name="val3">
     <p><input type="submit" value="Afficher">
 </form>
 <%-- Récupération des valeurs --%>
-    <% String valeur1 = request.getParameter("valeur1"); %>
-    <% String valeur2 = request.getParameter("valeur2"); %>
-    <% String valeur3 = request.getParameter("valeur3"); %>
+    <% String val1 = request.getParameter("val1"); %>
+    <% String val2 = request.getParameter("val2"); %>
+    <% String val3 = request.getParameter("val3"); %>
 
     <%-- Vérification de la condition entre les deux valeurs --%>
-    <% if (valeur1 != null && valeur2 != null && valeur3 != null ) { %>
+    <% if (val1 != null && val2 != null && val3 != null ) { %>
         <%-- Conversion des valeurs en entiers pour la comparaison --%>
-        <% int intValeur1 = Integer.parseInt(valeur1); %>
-        <% int intValeur2 = Integer.parseInt(valeur2); %>
-        <% int intValeur3 = Integer.parseInt(valeur3); %>
+        <% int intVal1 = Integer.parseInt(val1); %>
+        <% int intVal2 = Integer.parseInt(val2); %>
+        <% int intVal3 = Integer.parseInt(val3); %>
 
         <%-- Condition if pour comparer les valeurs --%>
-        <% if ((intValeur1 <=  intValeur3) && (intValeur3 <= intValeur2)) { %>
+        <% if (intVal1 <=  intVal3 && intVal3 <= intVal2)) { %>
             <p>C est est compris entre A et B.</p>
         <% } else { %>
-            <p>Valeur n'est pas compris entre A et B est égale à Valeur 2.</p>
+            <p>Valeur n'est pas compris entre A et B .</p>
         <% } %>
 
 
