@@ -41,12 +41,12 @@ A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
     <p><input type="submit" value="Afficher">
 </form>
 <%-- Récupération des valeurs --%>
-    <% String val3 = request.getParameter("valeur3"); %>
+    <% String valeur3 = request.getParameter("valeur3"); %>
 
 <%-- Vérification de la condition entre les 3 valeurs --%>
     <% if (valeur3 != null ) { %>
         <%-- Conversion des valeurs en entiers pour la comparaison --%>
-        <% int intVal3 = Integer.parseInt(val3); %>
+        <% int intValeur3 = Integer.parseInt(valeur3); %>
 
         <%-- Condition if pour comparer les valeurs --%>
         <% if (intValeur1 <=  intValeur3 && intValeur3 <= intValeur2) { %>
