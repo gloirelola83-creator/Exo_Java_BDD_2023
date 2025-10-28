@@ -55,10 +55,10 @@ A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
         <% int intVal3 = Integer.parseInt(val3); %>
 
         <%-- Condition if pour comparer les valeurs --%>
-        <% if (intVal1 <=  intVal3 && intVal3 <= intVal2)) { %>
+        <% if (intVal1 <=  intVal3 && intVal3 <= intVal2) { %>
             <p>C est est compris entre A et B.</p>
         <% } else { %>
-            <p>Valeur n'est pas compris entre A et B .</p>
+            <p>C n'est pas compris entre A et B .</p>
         <% } %>
 
 
