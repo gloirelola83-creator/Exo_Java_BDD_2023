@@ -59,7 +59,7 @@ A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
         <% } else { %>
             <p>C n'est pas compris entre A et B .</p>
         <% } %>
-
+    <% } %>
 Exemple :</br>
 A = 10</br>
 B = 20</br>
